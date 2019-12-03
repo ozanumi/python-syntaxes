@@ -8,8 +8,8 @@ print ('hi')
 
 alas = 10
 tinggi = 30
-luas_segitiga = alas * tinggi
-print(luas_segitiga)
+luas_segitiga = alas * tinggi/2
+print (luas_segitiga)
 
 #menggunakan logika percabangan
 
@@ -26,3 +26,11 @@ print ('dengan for')
 for  i in range (0,10):
     print (i+1 , luas_segitiga)
 
+#modularisasi tahap 1 : pembuatan fungsi
+
+def hitung_luas_segitiga(title,alas,tinggi):
+    print (title)
+    return alas * tinggi /2
+
+print(hitung_luas_segitiga('segitiga w',5,15))
+print(hitung_luas_segitiga('segitiga o',3,6))
